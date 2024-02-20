@@ -1,59 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style/style.css">
-    <title>News Website</title>
-</head>
+<?php include_once "client/components/base.php"?>
 <body>
-    <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <div class="header__top">
-                        <nav class="header__category-menu">
-                            <ul>
-                                <li class="header__category-menu--item">News</li>
-                                <li class="header__category-menu--item">Innovation</li>
-                                <li class="header__category-menu--item">Science</li>
-                                <li class="header__category-menu--item">Industry</li>
-                                <li class="header__category-menu--item">More</li>
-                            </ul>
-                        </nav>
-                        <div class="header__social">
-                            <div class="header__social--item">IG</div>
-                            <div class="header__social--item">TW</div>
-                            <div class="header__social--item">FB</div>
-                            <div class="header__social--item">YT</div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="header__bottom">
-                        <img src="assets/img/logo.svg" alt="" class="header__logo">
-                        <nav class="header__menu">
-                            <ul>
-                                <li class="header__menu--item">Home</li>
-                                <li class="header__menu--item">Feature</li>
-                                <li class="header__menu--item">Gallery</li>
-                                <li class="header__menu--item">Blog</li>
-                                <li class="header__menu--item">About</li>
-                                <li class="header__menu--item">Contact</li>
-                            </ul>
-                        </nav>
-                        <form type="search">
-                            <input type="search">
-                            <img src="assets/img/search.svg" alt="" class="header__search__logo">
-                        </form>
-                        <button class="header__button">Sign in / Login</button>
-                    </div>
-                    <hr>
-                </div>
-            </div>
-    </header>
+    <?php include_once "client/components/header.php"?>
     <main class="main">
         <section class="preview" style="background-image: url(assets/img/news__img.png);">
             <div class="container">
@@ -340,52 +287,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__top">
-                    <div class="footer__about">
-                        <img src="assets/img/logo__blue.svg" alt="" class="footer__logo">
-                        <p class="footer__about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                    </div>
-                    <nav class="footer__menu">
-                        <span class="footer__menu--title">Categories</span>
-                        <ul>
-                            <li class="footer__menu--item">International</li>
-                            <li class="footer__menu--item">Regional</li>
-                            <li class="footer__menu--item">Politics</li>
-                            <li class="footer__menu--item">Business</li>
-                            <li class="footer__menu--item">Sports</li>
-                            <li class="footer__menu--item">Health</li>
-                        </ul>
-                    </nav>
-                    <nav class="footer__menu">
-                        <span class="footer__menu--title">Company</span>
-                        <ul>
-                            <li class="footer__menu--item">About Us</li>
-                            <li class="footer__menu--item">Careers</li>
-                            <li class="footer__menu--item">Privacy Policy</li>
-                            <li class="footer__menu--item">Terms Of Services</li>
-                            <li class="footer__menu--item">Contact Us</li>
-                        </ul>
-                    </nav>
-                    <nav class="footer__menu">
-                        <span class="footer__menu--title">Social Media</span>
-                        <ul>
-                            <li class="footer__menu--item">Youtube</li>
-                            <li class="footer__menu--item">Instagram</li>
-                            <li class="footer__menu--item">Facebook</li>
-                            <li class="footer__menu--item">Twitter</li>
-                        </ul>
-                    </nav>
-                </div>
-                <hr>
-                <div class="footer__bottom">
-                    <span class="copyright">Copyright Tanah Air Studio</span>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include_once "client/components/footer.php"?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/slider.js"></script>
